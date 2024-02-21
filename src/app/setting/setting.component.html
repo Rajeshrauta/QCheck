@@ -1,0 +1,31 @@
+<h3>Setting</h3>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<ul class="navbar-nav mr-auto">
+    <li class="nav-item" routerLinkActive="active" title="Tab Setting" (click)="onSelect($event, '/setting/tabsetting')">
+        <a class="nav-link"  routerLink="/setting/tabsetting">Tab Setting</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active" title="Product List" (click)="onSelect($event, '/setting/productlist')">
+        <a class="nav-link"  routerLink="/setting/productlist">Product List</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active" title="Manage Company" (click)="onSelect($event, '/setting/managecompany')">
+        <a class="nav-link"  routerLink="/setting/managecompany">Manage Company</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active" title="Sync" (click)="onSelect($event, '/setting/sync')">
+        <a class="nav-link"  routerLink="/setting/sync">Sync</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active" title="Hangfire Job" (click)="onSelect($event, '/setting/hangfirejob')">
+        <a class="nav-link"  routerLink="/setting/hangfirejob">Hangfire Job</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active" title="Shipping Company" (click)="onSelect($event, '/setting/shippingcompany')">
+        <a class="nav-link"  routerLink="/setting/shippingcompany">Shipping Company</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active" title="Rack Location" (click)="onSelect($event, '/setting/racklocation')">
+        <a class="nav-link"  routerLink="/setting/racklocation">Rack Location</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active" title="Pricing Rule" (click)="onSelect($event, '/setting/pricingrule')">
+        <a class="nav-link"  routerLink="/setting/pricingrule">Pricing Rule</a>
+    </li>
+</ul>
+</nav>
+
+<router-outlet></router-outlet>

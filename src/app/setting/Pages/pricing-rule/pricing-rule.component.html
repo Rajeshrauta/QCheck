@@ -1,0 +1,60 @@
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-auto">
+        <!-- Empty column to push the button to the right -->
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#CreatingAccountingUserModal">New Rule</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="card shadow">
+          <div>
+            <!-- Projects table -->
+            <table class="table align-items-center table-flush">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Rule Name</th>
+                  <th scope="col">Created On</th>
+                  <th scope="col">Last Modified On</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>Rule Name</td>
+                    <td>2 jan, 2022</td>
+                    <td>2 jan, 2022</td>
+                    <td>
+                        <button class="btn btn-outline-danger"><fa-icon [icon]="delete"></fa-icon> Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Rule Name</td>
+                    <td>2 jan, 2022</td>
+                    <td>2 jan, 2022</td>
+                    <td>
+                        <button class="btn btn-outline-danger"> <fa-icon [icon]="delete"></fa-icon> Delete</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Rule Name</td>
+                    <td>2 jan, 2022</td>
+                    <td>2 jan, 2022</td>
+                    <td>
+                        <button class="btn btn-outline-danger"><fa-icon [icon]="delete"></fa-icon> Delete</button>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <app-new-pricing-rule-modal></app-new-pricing-rule-modal>
+  

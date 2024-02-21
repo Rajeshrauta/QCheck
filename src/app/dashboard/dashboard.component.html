@@ -1,0 +1,11 @@
+<h3>Dashboard</h3>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<ul class="navbar-nav mr-auto">
+    <li class="nav-item" routerLinkActive="active" title="Order Received" (click)="onSelect($event, '/dashboard/order-received')"><a class="nav-link"  routerLink="/dashboard/order-received">Order Received</a></li>
+    <li class="nav-item" routerLinkActive="active" title="Pending Orders" (click)="onSelect($event, '/dashboard/pending-orders')"><a class="nav-link"  routerLink="/dashboard/pending-orders">Pending Orders</a></li>
+    <li class="nav-item" routerLinkActive="active" title="Dispatch Route" (click)="onSelect($event, '/dashboard/dispatch-route')"><a class="nav-link"  routerLink="/dashboard/dispatch-route">Dispatch Route</a></li>
+    <li class="nav-item" routerLinkActive="active" title="Dispatched Route" (click)="onSelect($event, '/dashboard/dispatched-route')"><a class="nav-link"  routerLink="/dashboard/dispatched-route">Dispatched Route</a></li>
+</ul>
+</nav>
+
+<router-outlet></router-outlet>

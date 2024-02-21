@@ -1,0 +1,84 @@
+<!-- Modal -->
+<div
+  class="modal fade"   id="RecentModal"  tabindex="-1"  aria-labelledby="RecentTransactionsmodal"  aria-hidden="true"
+  data-bs-backdrop="static"   data-bs-keyboard="false"    aria-hidden="true" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="RecentTransactionsmodal">
+          Recent Transaction
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+             <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Customer">
+        <div class="input-group-append">
+          <button class="btn btn-none" type="button"><fa-icon [icon]="searchicon"></fa-icon></button>
+        </div>
+          </div>
+        </div>
+        <table class="table table-hover mt-3">
+          <thead>
+            <tr>
+              <th scope="col">Type</th>
+              <th scope="col">Date</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Customer</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of RecentTransactions">
+              <td>{{ item.Type }}</td>
+              <td>{{ item.Date }}</td>
+              <td>{{ item.Amount }}</td>
+              <td>{{ item.Customer }}</td>
+              <td>
+                <div ngbDropdown class="d-inline-block">
+                  <fa-icon
+                    [icon]="threedot"
+                    id="dropdownBasic1"
+                    class="remove-caret btn"
+                    ngbDropdownToggle
+                  ></fa-icon>
+                  <div
+                    ngbDropdownMenu
+                    aria-labelledby="dropdownBasic1"
+                    class="custom-dropdown-menu"
+                  >
+                    <button class="btn btn-none" ngbDropdownItem>
+                      <fa-icon [icon]="edit"></fa-icon> Edit
+                    </button>
+                    <button class="btn btn-none" ngbDropdownItem disabled>
+                      <fa-icon [icon]="orderprocess"></fa-icon> Order Process
+                    </button>
+                    <button class="btn btn-none" ngbDropdownItem>
+                      <fa-icon [icon]="email"></fa-icon> Message
+                    </button>
+                    <button class="btn btn-none" ngbDropdownItem>
+                      <fa-icon [icon]="print"></fa-icon> Print
+                    </button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-danger">Reset Grid</button>
+      </div>
+    </div>
+  </div>
+</div>

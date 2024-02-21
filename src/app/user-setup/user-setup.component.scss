@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+.navbar-nav {
+    display: flex;
+    // align-items: center;
+    flex-direction: row !important;
+  }
+  
+  .nav-item {
+    list-style: none;
+    margin-right: 10px; /* Adjust as needed for spacing between items */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black; /* Change the color to your preferred default color */
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: transparent; /* Set the initial color to transparent */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s; /* Add transition for smooth color change */
+  }
+  
+  .nav-item:hover .nav-link::after {
+    background-color: blue; /* Change the color to your preferred hover color */
+  }
+  
+  .active .nav-link::after {
+    background-color: blue; /* Change the color to your preferred active color */
+  }

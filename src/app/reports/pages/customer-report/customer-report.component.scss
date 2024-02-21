@@ -1,0 +1,10 @@
+.customer-list-wrapper {
+  max-height: calc(100vh - 150px); /* Adjust height as needed */
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .customer-list-wrapper {
+    max-height: calc(40vh - 100px); /* Adjust height as needed */
+  }
+}

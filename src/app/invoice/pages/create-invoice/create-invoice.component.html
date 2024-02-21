@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col-md-3">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Select Customer" aria-label="Recipient's username"
+        aria-describedby="basic-addon2">
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-floating mb-3">
+      <input
+        type="date"
+        class="form-control"
+        id="floatingInput"
+        placeholder="name@example.com"
+      />
+      <label for="floatingInput">Transaction Date</label>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="form-floating mb-3">
+      <input
+        type="button"
+        class="btn btn-primary"
+        value="Start Estimate"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-hover mt-3">
+    <thead>
+      <tr>
+        <th scope="col">Product</th>
+        <th scope="col">Description</th>
+        <th scope="col">Unit Price</th>
+        <th scope="col">Qty</th>
+        <th scope="col">Free</th>
+        <th scope="col">Qty on Hand</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of customerTransaction">
+        <td><input type="text" class="form-control form-control-sm" placeholder="{{item.Product}}"></td>
+        <td><input type="text" class="form-control form-control-sm" placeholder="{{item.Description}}"></td>
+        <td><input type="text" class="form-control form-control-sm" placeholder="{{item.UnitPrice}}"></td>
+        <td><input type="text" class="form-control form-control-sm" placeholder="{{item.Qty}}"></td>
+        <td><input type="text" class="form-control form-control-sm" placeholder="{{item.Free}}"></td>
+        <td><input type="text" class="form-control form-control-sm" placeholder="{{item.QuantityOnHand}}"></td>
+       <td><button class="btn btn-danger"><fa-icon [icon]="delete"></fa-icon></button></td>
+      </tr>        
+    </tbody>  
+  </table>
+</div>

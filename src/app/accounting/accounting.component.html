@@ -1,0 +1,9 @@
+<h3>Accounting</h3>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<ul class="navbar-nav mr-auto">
+    <li class="nav-item" routerLinkActive="active" title="Today Overdue" (click)="onSelect($event, '/accounting/today-overdue')"><a class="nav-link"  routerLink="/accounting/today-overdue">Today Overdue</a></li>
+    <li class="nav-item" routerLinkActive="active" title="All Overdue" (click)="onSelect($event, '/accounting/all-overdue')"><a class="nav-link"  routerLink="/accounting/all-overdue">All Overdue</a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

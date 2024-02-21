@@ -1,0 +1,73 @@
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-auto">
+          <!-- Empty column to push the button to the right -->
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#CreatingAccountingUserModal">New Company</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card shadow">
+            <div>
+              <!-- Projects table -->
+              <table class="table align-items-center table-flush table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Shipping Company</th>
+                <th scope="col" >Description</th>       
+                <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td>Rule Name</td>
+                      <td>2 jan, 2022</td>
+                      <td>
+                        <div ngbDropdown class="d-inline-block" dropstart>
+                          <fa-icon [icon]="threedot" id="dropdownBasic1" class="remove-caret btn" ngbDropdownToggle ></fa-icon>
+                          <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="custom-dropdown-menu">
+                            <button ngbDropdownItem><fa-icon [icon]="edit"></fa-icon> Edit</button>
+                            <button ngbDropdownItem><fa-icon [icon]="delete"></fa-icon> Delete</button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rule Name</td>
+                      <td>2 jan, 2022</td>
+                      <td>
+                        <div ngbDropdown class="d-inline-block" dropstart>
+                          <fa-icon [icon]="threedot" id="dropdownBasic1" class="remove-caret btn" ngbDropdownToggle ></fa-icon>
+                          <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="custom-dropdown-menu">
+                            <button ngbDropdownItem><fa-icon [icon]="edit"></fa-icon> Edit</button>
+                            <button ngbDropdownItem><fa-icon [icon]="delete"></fa-icon> Delete</button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Rule Name</td>
+                      <td>2 jan, 2022</td>
+                      <td>
+                        <div ngbDropdown class="d-inline-block" dropstart>
+                          <fa-icon [icon]="threedot" id="dropdownBasic1" class="remove-caret btn" ngbDropdownToggle ></fa-icon>
+                          <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="custom-dropdown-menu">
+                            <button ngbDropdownItem><fa-icon [icon]="edit"></fa-icon> Edit</button>
+                            <button ngbDropdownItem><fa-icon [icon]="delete"></fa-icon> Delete</button>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <app-new-shipping-company-modal></app-new-shipping-company-modal>

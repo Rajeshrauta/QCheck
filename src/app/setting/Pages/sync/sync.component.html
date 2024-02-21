@@ -1,0 +1,6 @@
+ <select class="form-select" style="width: 250px;" (change)="onSelect($event)">
+      <option value="/setting/sync/entity-sync-details" [attr.selected]="selectedRoute === '/setting/sync/entity-sync-details' ? true : null">Entity Sync Details</option>
+      <option value="/setting/sync/pending-customer-orders" [attr.selected]="selectedRoute === '/setting/sync/pending-customer-orders' ? true : null">Pending Customer Orders</option>
+  </select>
+
+<router-outlet></router-outlet>

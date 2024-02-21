@@ -1,0 +1,18 @@
+#Est1stdtl{
+.custom-ul {
+    border: 1px solid #ffffff; /* Add border style for <ul> */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    margin-bottom: 0px; /* Optional: Add margin bottom for spacing */
+  }
+}
+
+  .custom-ul .list-group-item {
+    border: none; /* Remove border for <li> within .custom-ul */
+    font-size: 0.8rem; 
+    padding: 1%;
+  }
+
+table{
+    font-size: 0.9rem; 
+    padding: 1%;
+  }

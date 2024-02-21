@@ -1,0 +1,81 @@
+<!-- Modal -->
+<div class="modal fade" id="CreatingAccountingUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create new rule</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col form-floating mb-3">
+              <input type="text" class="form-control" id="floatingInput" placeholder=".">
+              <label for="floatingInput">Rule Name</label>
+            </div>
+    
+            <div class="col form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder=".">
+              <label for="floatingInput">Customers</label>
+            </div>
+          </div>
+             
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col">
+                <div class="card shadow">
+                  <div>
+                    <!-- Projects table -->
+                    <table class="table align-items-center table-flush">
+                      <thead class="thead-light">
+                        <tr>
+                          <th scope="col">Product</th>
+                          <th scope="col">Description</th>
+                          <th scope="col">Actual Price</th>
+                          <th scope="col">New Price</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>ProductName</td>
+                            <td>Description</td>
+                            <td>123</td>
+                            <td><input tyoe="text"></td>
+                            <td>
+                                <button class="btn btn-outline-danger"><fa-icon [icon]="delete"></fa-icon> Delete</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Product Name</td>
+                            <td>Description</td>
+                            <td>2022</td>
+                            <td><input tyoe="text"></td>
+                            <td>
+                                <button class="btn btn-outline-danger"> <fa-icon [icon]="delete"></fa-icon> Delete</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Product Name</td>
+                            <td>Description/td>
+                            <td>2022</td>
+                            <td><input tyoe="text"></td>
+                            <td>
+                                <button class="btn btn-outline-danger"><fa-icon [icon]="delete"></fa-icon> Delete</button>
+                            </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>

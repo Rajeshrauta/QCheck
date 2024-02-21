@@ -1,0 +1,73 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="mb-5 mb-xl-0">
+      <div class="card bg-gradient-default shadow">
+        <div class="card-header bg-transparent">
+          <div class="row align-items-center">
+            <div class="col">
+              <!-- <h6 class="text-uppercase ls-1 mb-1">Overview</h6> -->
+              <h4 class="mb-0">Vendor Name</h4>
+            </div>
+            <div class="col">
+              <ul class="nav nav-pills justify-content-end">
+                <li class="nav-item mr-md-0" >
+                  <a href="#" class="nav-link" >
+                    <span ngbTooltip="exampleemail.com"><fa-icon [icon]="email" style="color: #e9a717;"></fa-icon> Email</span>
+                  </a>
+                </li>
+                <li class="nav-item mr-md-0" >
+                  <a href="#" class="nav-link">
+                    <span ngbTooltip="+1 908980977"><fa-icon [icon]="whatsapp" style="color: rgb(12, 187, 12);"></fa-icon> WhatsApp</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="nav nav-pills justify-content-end">
+          <select class="form-select" aria-label="Select Territory" style="width: 150px;">
+            <option>Select Territory</option>
+            <option value="Austin">Austin</option>
+            <option value="Houston">Houston</option>
+            <option value="Dellas">Dellas</option>
+            <option value="Pick Up">Pick Up</option>
+          </select>
+        </div>
+        </div>
+        <p class="p-3">Billing address</p>
+      </div>
+    </div>
+  </div>
+
+
+<table class="table table-hover mt-3">
+    <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Type</th>
+          <th scope="col">Doc No</th>
+          <th scope="col">Due Date</th>
+          <th scope="col">Total</th>          
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jan 05,2024</td>
+          <td>Estimate</td>
+          <td>62041</td>
+          <td>Jan 05,2024</td>
+          <td>$123</td>
+          <td><button ngbDropdownItem><fa-icon [icon]="orderprocess"></fa-icon> View All</button></td>
+        </tr>
+        <tr>
+          <td>Jan 05,2024</td>
+          <td>Invoice</td>
+          <td>62041</td>
+          <td>Jan 05,2024</td>
+          <td>$123</td>
+          <td><button ngbDropdownItem><fa-icon [icon]="orderprocess"></fa-icon> View All</button></td>
+        </tr>        
+      </tbody>  
+  </table>

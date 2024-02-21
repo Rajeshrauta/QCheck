@@ -1,0 +1,66 @@
+<div class="row">
+  <div class="col-md-3">
+    <label>Select Customer</label>
+      <input type="text" class="form-control" placeholder="Select Customer">
+  </div>
+
+  <div class="col-md-3">
+    <label>Report Period</label>
+      <input type="text" class="form-control" placeholder="Report Period">
+  </div>
+
+  <div class="col-md-2">
+    <label>Start Date</label>
+      <input type="date" class="form-control" placeholder="From Date">
+  </div>
+  
+  <div class="col-md-2">
+    <label>End Date</label>
+      <input type="date" class="form-control" placeholder="To Date">
+  </div>
+
+  <div class="col-md-2">
+    <br>
+      <input type="button" class="btn btn-primary btn-sm" value="View Report">
+  </div>
+  
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-3">
+    <div class="customer-list-wrapper">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a class="nav-link" routerLink="/reports/customer-report">First Customer Name</a></li>
+          <li class="list-group-item"><a class="nav-link" routerLink="/reports/customer-report">Second Customer Name</a></li>
+          <li class="list-group-item"><a class="nav-link" routerLink="/reports/customer-report">Third Customer Name</a></li>
+          <li class="list-group-item"><a class="nav-link" routerLink="/reports/customer-report">Fourth Customer Name</a></li>
+         <li class="list-group-item"><a class="nav-link" routerLink="/reports/customer-report">Fifth Customer Name</a></li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="col table-responsive">
+    <table class="table table-hover mt-3">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">20/2/2024</th>
+        <th scope="col">27/2/2024</th>
+        <th scope="col">5/2/2024</th>
+        <th scope="col">Total</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of customerTransaction">
+        <td><input type="text" class="form-control form-control-sm" placeholder="{{item.Product}}"></td>
+        <td><input type="text" class="form-control form-control-sm" placeholder="{{item.Description}}"></td>
+        <td><input type="text" class="form-control form-control-sm" placeholder="{{item.UnitPrice}}"></td>
+        <td><input type="text" class="form-control form-control-sm" placeholder="{{item.Qty}}"></td>
+        <td>40</td>
+       <td><button class="btn btn-danger"><fa-icon [icon]="delete"></fa-icon></button></td>
+      </tr>        
+    </tbody>  
+  </table>
+</div>
+</div>

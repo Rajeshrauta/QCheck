@@ -1,0 +1,52 @@
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Customer Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Enabled</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Rajesh Rauta</td>
+        <td>rajeshrauta5&#64;gmail.com</td>
+        <td> 
+          <div class="form-check form-switch"> 
+            <input type="checkbox" class="form-check-input"  role="switch" checked/>
+          </div>
+        </td>
+          
+        <td>
+          <a ngbDropdown class="d-inline-block" dropstart>
+            <fa-icon [icon]="threedot" id="dropdownBasic1" class="remove-caret btn" title="Actions" ngbDropdownToggle ></fa-icon>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="custom-dropdown-menu">
+              <button ngbDropdownItem><fa-icon [icon]="edit"></fa-icon> Edit</button>
+              <button ngbDropdownItem><fa-icon [icon]="trash"></fa-icon> Delete</button>
+              <button ngbDropdownItem ><fa-icon [icon]="key"></fa-icon> Change Password</button>
+            </div>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>Sagar Sharma</td>
+        <td>shagarsharma1998&#64;gmail.com</td>
+        <td>
+          <div class="form-check form-switch"> 
+            <input type="checkbox" class="form-check-input"  role="switch"/>
+          </div>
+        </td>
+        <td>
+          <a ngbDropdown class="d-inline-block" dropstart>
+            <fa-icon [icon]="threedot" id="dropdownBasic1" class="remove-caret btn" ngbDropdownToggle ></fa-icon>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="custom-dropdown-menu">
+              <button ngbDropdownItem><fa-icon [icon]="edit" title="Edit"></fa-icon> Edit</button>
+              <button ngbDropdownItem><fa-icon [icon]="trash"></fa-icon> Delete</button>
+              <button ngbDropdownItem ><fa-icon [icon]="key"></fa-icon> Change Password</button>
+            </div>
+          </a>
+        </td>
+      </tr>        
+    </tbody>
+  </table>

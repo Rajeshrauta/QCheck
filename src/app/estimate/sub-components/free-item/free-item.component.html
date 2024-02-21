@@ -1,0 +1,89 @@
+<div class="container-fluid">
+  <div class="p-2 m-3 d-flex align-items-center">
+    <div>
+      <span class="pe-2">Addtional Discount Price</span>
+      <input type="checkbox" tabindex="-1" class="p-1 checkbox" />
+    </div>
+
+    <div class="ms-auto">
+      <fa-icon
+        [icon]="close"
+        style="height: 22"
+        (click)="activeModal.close()"
+        class="hand"
+      ></fa-icon>
+    </div>
+  </div>
+  <form [formGroup]="freeItemForm">
+    <div class="p-2 m-3 d-flex align-items-center row">
+      <div class="p-2 col-lg-4 col-md-4 col-sm-4 col-12">
+        <div class="d-flex align-items-center">
+          <div class="pe-2 w-100">
+            <label for="">Quantity</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="qty"
+              (keypress)="numberOnly($event)"
+            />
+          </div>
+          <div class="mt-4">
+            <fa-icon
+              [icon]="plus"
+              style="height: 18; color: green"
+              (click)="onAdd()"
+              class="hand plus-svg-icon"
+            ></fa-icon>
+            <br />
+            <fa-icon
+              [icon]="minus"
+              style="height: 18; color: red"
+              (click)="onSub()"
+              [class.disabled]="freeItemForm?.get('qty')?.value <= 0"
+              class="hand minus-svg-icon"
+            ></fa-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-2 col-lg-4 col-md-4 col-sm-4 col-12">
+        <div class="d-flex align-items-center">
+          <div class="pe-2 w-100">
+            <label for="">Free</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="free"
+              (keypress)="numberOnly($event)"
+            />
+          </div>
+          <div class="mt-4">
+            <fa-icon
+              [icon]="plus"
+              style="height: 18; color: green"
+              (click)="onAddFree()"
+              class="hand plus-svg-icon"
+            ></fa-icon>
+            <br />
+            <fa-icon
+              [icon]="minus"
+              style="height: 18; color: green"
+              (click)="onSubFree()"
+              [class.disabled]="freeItemForm?.get('free')?.value <= 0"
+              class="hand minus-svg-icon"
+            ></fa-icon>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 col-lg-4 col-md-4 col-sm-4 col-12">
+        <button
+          type="button"
+          class="btn btn-primary mt-4 w-100"
+          (click)="closeModal()"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

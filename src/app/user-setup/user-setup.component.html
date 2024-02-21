@@ -1,0 +1,13 @@
+<h3>User Setup</h3>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<ul class="navbar-nav mr-auto">
+    <li class="nav-item" routerLinkActive="active" title="Customer" (click)="onSelect($event, '/user-setup/customer')"><a class="nav-link"  routerLink="/user-setup/customer">Customer</a></li>
+    <li class="nav-item" routerLinkActive="active" title="Sales User" (click)="onSelect($event, '/user-setup/salesuser')"><a class="nav-link"  routerLink="/user-setup/salesuser">Sales User</a></li>
+    <li class="nav-item" routerLinkActive="active" title="Office User" (click)="onSelect($event, '/user-setup/officeuser')"><a class="nav-link"  routerLink="/user-setup/officeuser">Office User</a></li>
+    <li class="nav-item" routerLinkActive="active" title="Accounting User" (click)="onSelect($event, '/user-setup/accountinguser')"><a class="nav-link"  routerLink="/user-setup/accountinguser">Accounting User</a></li>
+    <li class="nav-item" routerLinkActive="active" title="Warehouse User" (click)="onSelect($event, '/user-setup/warehouseuser')"><a class="nav-link"  routerLink="/user-setup/warehouseuser">Warehouse User</a></li>
+</ul>
+</nav>
+  
+<router-outlet></router-outlet>

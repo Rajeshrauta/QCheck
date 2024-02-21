@@ -1,0 +1,37 @@
+
+.navbar-nav {
+    display: flex;
+    // align-items: center;
+    flex-direction: row !important;
+  }
+  
+  .nav-item {
+    list-style: none;
+    margin-right: 10px; /* Adjust as needed for spacing between items */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black; /* Change the color to your preferred default color */
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s; 
+  }
+  
+  .nav-item:hover .nav-link::after {
+    background-color: blue;
+  }
+  
+  .active .nav-link::after {
+    background-color: blue;
+  }
