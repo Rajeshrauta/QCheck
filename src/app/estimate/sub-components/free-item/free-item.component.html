@@ -39,7 +39,7 @@
               [icon]="minus"
               style="height: 18; color: red"
               (click)="onSub()"
-              [class.disabled]="freeItemForm?.get('qty')?.value <= 0"
+              [class.disabled]="freeItemForm.get('qty')?.value <= 0"
               class="hand minus-svg-icon"
             ></fa-icon>
           </div>
@@ -69,7 +69,7 @@
               [icon]="minus"
               style="height: 18; color: green"
               (click)="onSubFree()"
-              [class.disabled]="freeItemForm?.get('free')?.value <= 0"
+              [class.disabled]="freeItemForm.get('free')?.value <= 0"
               class="hand minus-svg-icon"
             ></fa-icon>
           </div>
